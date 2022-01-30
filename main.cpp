@@ -44,9 +44,14 @@ int main()
     vector<pair<int, char>> finalChars;
     vector<char> wrongChars;
     int ttt = 6;
-
     while (ttt--)
     {
+        if (allWords.size() == 0)
+        {
+            cout << "Couldn't solve :(" << endl;
+            break;
+        }
+
         cout << "TRY LEFT: " << ttt + 1 << endl;
         cout << "TRY INPUT: " << tryString << endl;
         cout << "ENTER OUTPUT:" << endl
